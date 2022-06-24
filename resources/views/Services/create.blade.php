@@ -13,7 +13,7 @@
         </div>
         <div class="col">
             <label> tiempo_maximo</label>
-            <input type="text" name="tiempo_maximo">
+            <input type="time" name="tiempo_maximo">
         </div>
         <div class="col">
             <label> costo_extra</label>
@@ -22,6 +22,10 @@
         <div class="col">
             <label> clave</label>
             <input type="password" name="clave">
+        </div>
+        <div class="col">
+            <label> promocion</label>
+            <input type="number" name="promotions_id">
         </div>
        
         <input type="submit" name="btn_enviar" value="Registrar">

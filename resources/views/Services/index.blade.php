@@ -10,6 +10,7 @@
                 <th scope="col">tiempo_max</th>
                 <th scope="col">costo_extra</th>
                 <th scope="col">clave</th>
+                <th scope="col">promociones</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +22,7 @@
                     <td>{{ $service->tiempo_max}}</td>
                     <td>{{ $service->costo_extra}}</td>
                     <td>{{ $service->clave}}</td>
+                    <td>{{ $service->promotions_id}}</td>
                     <td>
                 <a  class="btn btn-warning btm-sm" href="{{route('services.edit',$service->id)}}">Editar</a>
             </td>

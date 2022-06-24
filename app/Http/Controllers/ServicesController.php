@@ -42,6 +42,7 @@ class ServicesController extends Controller
         $services ->tiempo_max = $request->tiempo_maximo;
         $services ->costo_extra = $request->costo_extra;
         $services ->clave = $request->clave;
+        $services ->promotions_id = $request->promotions_id;
         $services ->save();
         return redirect()->route('services.create');
     }
@@ -84,6 +85,7 @@ class ServicesController extends Controller
         $services ->tiempo_max = $request->input('tiempo_max');
         $services ->costo_extra = $request->input('costo_extra');
         $services ->clave = $request->input('clave');
+        $services ->promotions_id = $request->input('promotions_id');
         $services ->save();
         return redirect()->route('services.index');
     }

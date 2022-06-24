@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre',45);
             $table->string('descripcion',45);
-            $table->string('tiempo_max',45);
+            $table->time('tiempo_max',45);
             $table->string('costo_extra',45);
             $table->string('clave',45);
             $table->unsignedBigInteger('promotions_id');
